@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("#slide").click(function(){
+    $("#pan").slideDown("Slow");
+  });
+});
+</script>
+<style> 
+#pan,#slide {
+  padding: 5px;
+  text-align: center;
+  background-color: skyblue;
+  border: solid 1px #c3c3c3;
+}
+
+#pan {
+  padding: 150px;
+  display: none;
+}
+</style>
+</head>
+<body>
+<div id="slide">Click to slide down</div>
+<div id="pan" > </div>
+</body>
+</html>
