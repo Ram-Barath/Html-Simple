@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $(document).click(function(){
+                var x=event.clientX-25;
+                var y=event.clientY-25;
+                var a='margin-top';
+                var c=y+'px';
+                var b='margin-left';
+                var d=x+'px';
+                $("div").css(a,c)
+                $("div").css(b,d)
+            });
+        });
+        </script>
+        <style>
+            div{
+              height: 100px;
+              width: 100px;
+              background-color: rgb(255, 0, 221);
+              border-radius: 50%;
+              position: absolute;
+              margin-top: 10px;
+              margin-left: 10px;
+            }
+        </style>
+        </head>
+        <body>
+            <div></div>
+        </body>
+</html>
