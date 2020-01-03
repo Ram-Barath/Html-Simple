@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>problem 5</title>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script> 
+	var count=0;
+$(document).ready(function(){
+$(".object").mousemove(function(e)
+{
+	$(".object").stop().animate({ height:'200px'});
+});
+$(".back").mousemove(function(e)
+		{
+		$(".object").stop().animate({height:'50px'});
+		});
+});
+$(document).ready(function(){
+$(".object1").mousemove(function(e)
+{
+	$(".object1").stop().animate({ height:'200px'});
+});
+$(".back").mousemove(function(e)
+		{
+		$(".object1").stop().animate({height:'50px'});
+		});
+});
+$(document).ready(function(){
+$(".object2").mousemove(function(e)
+{
+	$(".object2").stop().animate({ height:'200px'});
+});
+$(".back").mousemove(function(e)
+		{
+		$(".object2").stop().animate({height:'50px'});
+		});
+});
+$(document).ready(function(){
+$(".object3").mousemove(function(e)
+{
+	$(".object3").stop().animate({ height:'200px'});
+});
+$(".back").mousemove(function(e)
+		{
+		$(".object3").stop().animate({height:'50px'});
+		});
+});
+</script>
+<style>
+	.object{
+		
+		position: absolute;
+		height: 50px;
+		width: 75px;
+		background: rgb(74, 217, 236);
+	}
+</style>
+<style type="text/css">
+	.object1{
+		
+		position: absolute;
+		left:100px;
+		height: 50px;
+		width: 75px;
+		background: rgb(240, 39, 206);
+	}
+</style>
+<style type="text/css">
+	.object2{
+		
+		position: absolute;
+		left:200px;
+		height: 50px;
+		width: 75px;
+		background: #40f585;
+	}
+</style>
+<style type="text/css">
+	.object3{
+		
+		position: absolute;
+		height: 50px;
+		width: 75px;
+		left:300px;
+		background: rgb(241, 211, 41);
+	}
+</style><style>
+	.back{
+		
+		position: absolute;
+		height: 500px;
+		width: 750px;
+		background: #f2f2f2;
+	}
+</style>
+</style>
+</style>
+</head>
+<body>
+	<div class ="back"></div>
+	<div class="object"></div>
+	<div class="object1"></div><div class="object2"></div><div class="object3"></div>
+</body>
+</html>

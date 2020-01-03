@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>cursor</title>
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script >
+	$(document).ready(function()
+	{
+		$(".but1").click(function(e){
+			$(".object").stop().animate({ opacity:'0'},'slow');
+		});
+		$(".but2").click(function(e)
+		{
+			$(".object").stop().animate({ opacity:'100'},'slow');
+		});
+	});
+</script>
+
+
+<style type="text/css">
+	.object{
+		left: 0px;
+		top:100px;
+		position: absolute;
+		height: 175px;
+		width: 175px;
+        margin-left: 20px;
+		background: red;
+		opacity: 0%;
+	}
+</style>
+</head>
+<body>
+	<button type="button" Class="but1">hide</button>
+	<button type="button" Class="but2">reappear</button>
+	<div class="object"></div>
+</body>
+</html>
